@@ -3,7 +3,7 @@ node {
 
 
     stage('Clone repository') {
-        withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: '<CREDENTIAL_ID>',
+        withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'samaya-credencesoft',
         usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
 
         sh 'echo uname=$USERNAME pwd=$PASSWORD'
