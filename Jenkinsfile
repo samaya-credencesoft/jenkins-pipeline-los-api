@@ -3,7 +3,7 @@ node {
 
 
     stage('Clone repository') {
-       git url: 'https://github.com/samaya-credencesoft/java-customer-onboarding.git'
+       git url: 'https://github.com/samaya-credencesoft/Website.git'
 
     }
 
