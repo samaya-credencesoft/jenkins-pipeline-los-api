@@ -3,6 +3,9 @@ node {
 
     stage('Clone repository') {
        sh 'echo "Clonig Repo ....."'
+       sh 'git branch: 'master',
+            credentialsId: 'samaya-credencesoft'
+            url: 'ssh://git@github.com:samaya-credencesoft/java-customer-onboarding.git'
     }
 
     stage('Build image') {
@@ -17,5 +20,5 @@ node {
     stage('Push image') {
         sh 'echo "Push image ....."'
         }
-    
+
 }
