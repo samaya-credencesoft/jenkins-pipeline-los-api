@@ -1,10 +1,10 @@
 node {
-    def app
+
+    https://github.com/samaya-credencesoft/jenkins-pipeline-los-api.git
 
     stage('Clone repository') {
-       git branch: "master",
-       credentialsId: "samaya-credencesoft"
-       url: "https://github.com/samaya-credencesoft/jenkins-pipeline-los-api.git"
+       git url: 'https://github.com/jglick/simple-maven-project-with-tests.git'
+
     }
 
     stage('Build image') {
