@@ -17,5 +17,5 @@ node {
     stage('Push image') {
         sh 'echo "Push image ....."'
         }
-    }
+    
 }
