@@ -1,9 +1,9 @@
 node {
 
-    https://github.com/samaya-credencesoft/jenkins-pipeline-los-api.git
+
 
     stage('Clone repository') {
-       git url: 'https://github.com/samaya-credencesoft/jenkins-pipeline-los-api.git' 
+       git url: 'https://github.com/samaya-credencesoft/java-customer-onboarding.git'
 
     }
 
