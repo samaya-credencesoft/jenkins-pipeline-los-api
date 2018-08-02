@@ -4,7 +4,7 @@ node {
     stage('Clone repository') {
        git branch: "master",
        credentialsId: "samaya-credencesoft"
-       url: "https://github.com/samaya-credencesoft/java-customer-onboarding.git"
+       url: "https://github.com/samaya-credencesoft/jenkins-pipeline-los-api.git"
     }
 
     stage('Build image') {
