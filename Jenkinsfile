@@ -3,7 +3,7 @@ node {
     https://github.com/samaya-credencesoft/jenkins-pipeline-los-api.git
 
     stage('Clone repository') {
-       git url: 'https://github.com/jglick/simple-maven-project-with-tests.git'
+       git url: 'https://github.com/samaya-credencesoft/jenkins-pipeline-los-api.git' 
 
     }
 
