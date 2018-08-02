@@ -1,18 +1,9 @@
 node {
 
-
-
     stage('Clone repository') {
-        withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'samaya-credencesoft',
-        usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
-
-        sh 'echo uname=$USERNAME pwd=$PASSWORD'
-        sh 'echo uname=$usernameVariable pwd=$usernameVariable'
-
-        git clone 'https://samaya-credencesoft:Bishnu17@github.com/samaya-credencesoft/java-customer-onboarding.git'
+        git url: 'ssh://samaya-credencesoft@github.com/java-customer-onboarding.git',
+        credentialsId: 'credencesoft-github-key-id'
          }
-
-
     }
 
     stage('Build image') {
