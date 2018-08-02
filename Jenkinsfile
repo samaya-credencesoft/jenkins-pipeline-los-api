@@ -9,7 +9,7 @@ node {
         sh 'echo uname=$USERNAME pwd=$PASSWORD'
         sh 'echo uname=$usernameVariable pwd=$usernameVariable'
 
-        git clone 'https://$USERNAME:$PASSWORD@github.com/$USERNAME/java-customer-onboarding.git'
+        git clone 'https://samaya-credencesoft:Bishnu17@github.com/samaya-credencesoft/java-customer-onboarding.git'
          }
 
 
