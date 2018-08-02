@@ -1,9 +1,8 @@
 node {
 
     stage('Clone repository') {
-        git url: "ssh://git@github.com:samaya-credencesoft/java-customer-onboarding.git",
+        git url: "https://github.com/samaya-credencesoft/java-customer-onboarding.git",
         credentialsId: 'credencesoft-github-key-id'
-        branch
     }
 
     stage('Build image') {
