@@ -1,7 +1,7 @@
 node {
 
     stage('Clone repository') {
-        sh git clone ssh://git@github.com/samaya-credencesoft/java-customer-onboarding.git
+        sh 'git clone ssh://git@github.com/samaya-credencesoft/java-customer-onboarding.git'
     }
 
     stage('Build image') {
